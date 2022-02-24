@@ -5,3 +5,8 @@ body{
      font-family: 'Roboto Condensed', sans-serif;
 
 }
+
+.card__img{
+     width: 100px;
+     background-color: black;
+}
