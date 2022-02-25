@@ -29,8 +29,12 @@ body{
 
 .container{
 
-     width: 90%;
+     width: var(--width-container);
+     max-width: var(--max-width-container);
+     padding: var(--padding-container);
      margin: 0 auto;
+     overflow: hidden;
+     width: 100px;
 }
 
 
@@ -39,4 +43,52 @@ body{
 .footer__icon{
 
      width: 30px;
+}
+
+
+.hero{
+     height: 100vh;
+     min-height: 500px;
+     position: relative;
+     --padding-container: 0;
+
+}
+
+
+
+.hero__container{
+display: grid;
+display: 100%;
+grid-template-columns: 3fr 2fr;
+place-items: center;
+gap: 20px;
+}
+
+
+.hero__title{
+
+font-size: 4rem;
+
+}
+
+.hero__copy{
+
+     font-size: 1.2rem;
+     margin: 1.5em 0;
+}
+
+.hero__cta{
+
+display: inline-block ;
+background-color:var(--color-btn);
+color: white;
+padding: var(--padding-btn);
+text-align: center;
+text-decoration: none;
+}
+
+
+.hero__img{
+
+     width: 100%;
 }
