@@ -131,3 +131,33 @@ background: var(--color-primary);
 
 
 }
+
+.about{
+
+     display: grid;
+     grid-template-columns: 5fr 4fr;
+     place-items: center;
+}
+
+.about__product{
+
+     width: 90%;
+}
+
+.about__paragraph{
+
+     margin: 20px 0;
+     line-height: 1.5;
+     font-weight:400;
+}
+
+.about__picture{
+
+text-align: center;
+
+}
+
+.about__img{
+
+     width: 95%;
+}
