@@ -55,12 +55,14 @@ body{
 }
 
 .container{
-
+     display: flex;
+     flex-direction: column;
      width: var(--width-container);
      max-width: var(--max-width-container);
      padding: var(--padding-container);
      margin: 0 auto;
      overflow: hidden;
+     align-items: center;
 }
 
 
@@ -199,5 +201,27 @@ margin-top: 20px;
 width: 99%;
 margin: 0 auto;
 margin-top: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.card__item{
+padding: 10px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.card__item figure{
+height: 250px;
+width: 280px;
+display: flex;
+overflow: hidden;
+padding-bottom: 20px;
+}
+
+.card__item figure img{
+width: 100%;
 
 }
