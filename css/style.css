@@ -34,6 +34,11 @@ align-items: center;
 justify-content: center;
 }
 
+.searchbar input{
+outline: none;     
+padding: 10px 20px;
+border-radius: 20px;
+}
 
 .navoptions{
 display: flex;
@@ -64,8 +69,6 @@ body{
 .container{
      display: flex;
      flex-direction: column;
-     width: var(--width-container);
-     max-width: var(--max-width-container);
      padding: var(--padding-container);
      margin: 0 auto;
      overflow: hidden;
@@ -74,11 +77,22 @@ body{
 
 
 .hero{
-     height: 100vh;
-     min-height: 500px;
+     padding: 20px;
+     padding-top: 60px;
+     height: 80vh;
      position: relative;
      --padding-container: 0;
 
+}
+
+@media (max-width: 1200px) {
+.hero{
+     height: 50vh;
+     display: flex;
+}
+.crate__picture img{
+    width: 100%;
+}
 }
 
 .hero::after{
@@ -107,14 +121,14 @@ gap: 20px;
 
 .hero__title{
 
-font-size: 4rem;
+font-size: 28px;
 
 }
 
 .hero__copy{
 
-     font-size: 1.2rem;
-     margin: 1.5em 0;
+     font-size: 16px;
+     margin: 20px 0;
 }
 
 .hero__cta{
@@ -140,9 +154,16 @@ background-color: #eb4141;
 
 }
 
+main{
+
+padding: 0 20px;
+
+}
+
+
 .title{
 
-font-size: 2.5rem;
+font-size: 28px;
 text-align: var(--align-title);
 color: var(--color-title);
      
@@ -191,18 +212,20 @@ text-align: center;
 }
 
 
+
+
 .card_copy{
 margin-top: 20px;
 
 }
 
 .card__container{
-width: 99%;
 margin: 0 auto;
 margin-top: 60px;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 }
 
 .card__item{
@@ -232,6 +255,7 @@ height: 150px;
 padding: 10px;
 background-color: whitesmoke;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 }
@@ -253,8 +277,7 @@ cursor: pointer;
 }
 
 .footer__icon{
-
-     width: 30px;
+width: 30px;
 }
 
 
