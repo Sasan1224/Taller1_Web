@@ -3,7 +3,7 @@
 
 :root{
 --color-primary: #f3f192;
---color-title: #000;
+--color-title: rgb(248, 244, 244);
 --align-title: left;
 --padding-container: 100px 0;
 --width-container: 90%;
@@ -12,9 +12,70 @@
 --text-btn: rgb(255, 253, 253);
 --padding-btn: 20px 35px;
 --height-shape: 20em;
+}
 
+
+*{
+margin: 0;
+padding: 0;
+}
+
+h1{
+font-size: 42px;
+}
+
+
+h2{
+font-size: 34px;
+}
+
+
+h3{
+font-size: 28px;
+}
+
+p{
+font-size: 20px;
+padding-left: 20px;
+padding-right:  20px;
+text-align: justify;
+}
+
+.carrusel button{
+ background: rgba(255, 255, 255, 0.473);  
+ color: rgb(255, 255, 255);  
+ border: 1px solid rgb(241, 238, 238);
+ border-radius: 50%;
+ width: 70px;
+ height: 70px;
+ font-size: 36px;
+}
+
+.carrusel button:hover{
+
+cursor: pointer;
 
 }
+
+.carrusel__item{
+
+min-width: 1005px;
+display: flex;
+justify-content: center;
+
+}
+
+
+h1, h2, h3, p{
+color: white;     
+}
+
+
+.card .container h2, .card .container p,.card .container h3, .newsletter h2, .footer h2, .footer p{
+
+     color: black;
+}
+
 
 .navbar{
 width: 100%;
@@ -32,6 +93,12 @@ justify-content: space-around;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+
+a{
+text-decoration: underline;
+color: white;
 }
 
 .searchbar input{
@@ -56,6 +123,14 @@ cursor: pointer;
 
      text-decoration: underline;
 }
+
+.crate__about{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 body{
      font-family: 'Roboto Condensed', sans-serif;
@@ -85,15 +160,10 @@ body{
 
 }
 
-@media (max-width: 1200px) {
-.hero{
-     height: 50vh;
-     display: flex;
-}
+
 .crate__picture img{
-    width: 100%;
-}
-}
+     width: 500px;
+ }
 
 .hero::after{
 
@@ -166,9 +236,12 @@ padding: 0 20px;
 
 font-size: 28px;
 text-align: var(--align-title);
-color: var(--color-title);
-     
+color: var(--color-title);  
 }
+
+
+
+
 
 .title--border::after{
 
@@ -182,11 +255,22 @@ background: var(--color-primary);
 
 }
 
+
+.crates div{
+display: flex;
+align-items: center;
+}
+
+
 .about{
 
-     display: grid;
-     grid-template-columns: 5fr 4fr;
-     place-items: center;
+display: flex;
+flex-direction: row-reverse;
+}
+
+.about div{
+padding-left: 50px;
+padding-right: 50px;
 }
 
 .about__product{
@@ -206,6 +290,8 @@ background: var(--color-primary);
 text-align: center;
 
 }
+
+
 
 .about__img{
 
@@ -292,3 +378,18 @@ padding: 80px;
 .footer__title{
 padding-top: 30px;
 }
+
+@media (max-width: 1200px) {
+     .hero{
+          height: 50vh;
+          display: flex;
+     }
+     .crate__picture img{
+         width: 250px;
+     }
+     .carrusel__item{
+          min-width: auto;
+          width: 100%;
+          flex-wrap: wrap;
+     }
+     }
